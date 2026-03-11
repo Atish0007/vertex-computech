@@ -1,0 +1,286 @@
+.desktop-support {
+    padding: 60px 0px 60px;
+    background: #020617;
+    color: #e2e8f0;
+    /* font-family: sans-serif; */
+}
+
+/* Header */
+
+.ds-header {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.ds-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.ds-header p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #94a3b8;
+}
+
+
+/* Cards */
+.ds-services {
+    margin-top: 20px;
+}
+
+.ds-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    transition: 0.4s;
+    border: 1px solid #1e293b;
+}
+
+.ds-card:hover {
+    transform: translateY(-6px);
+    border-color: #00c6ff;
+    cursor: pointer;
+    box-shadow: 0 0px 50px rgb(255 255 255 / 24%);
+}
+
+.ds-card i {
+    font-size: 28px;
+    color: #00c6ff;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px #00c6ff);
+}
+
+.ds-card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.ds-card p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+/* Advantage */
+
+.ds-advantage {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ds-advantage h2 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.adv-card {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #1e293b;
+    transition: 0.3s;
+}
+
+.adv-card:hover {
+    border-color: #00c6ff;
+    transform: translateY(-5px);
+    cursor: pointer;
+    box-shadow: 0 0px 50px rgb(255 255 255 / 24%);
+}
+
+.adv-card h5 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.adv-card p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .ds-header h1 {
+        font-size: 28px;
+    }
+
+    .ds-header p {
+        font-size: 15px;
+    }
+
+}
+
+
+
+/* Error SS Section CSS */
+.windows-errors {
+    padding: 0px 0px 60px;
+    background: #020617;
+}
+
+/* HEADER */
+
+.error-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.error-header h2 {
+    color: #fff;
+    font-size: 36px;
+}
+
+.error-header p {
+    color: #94a3b8;
+}
+
+/* GRID */
+
+.error-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+
+.error-card {
+    background: #0f172a;
+    border-radius: 12px;
+    padding: 12px;
+    cursor: pointer;
+    transition: .35s;
+    border: 1px solid #1e293b;
+    text-align: center;
+}
+
+.error-card:hover {
+    border-color: #00c6ff;
+    transform: translateY(-8px);
+    box-shadow: 0 0px 20px #00c6ff59;
+}
+
+.error-card img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.error-card span {
+    color: #fff;
+    font-size: 14px;
+}
+
+.error-card h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.error-card p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* LIGHTBOX */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fade .3s;
+}
+
+.lightbox img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 10px;
+    cursor: zoom-in;
+    transition: .3s;
+}
+
+.lightbox img.zoom {
+    transform: scale(1.7);
+    cursor: zoom-out;
+}
+
+/* NAV BUTTONS */
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 32px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 40px;
+}
+
+.next {
+    right: 40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px) {
+
+    .error-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .ds-header {
+        margin-bottom: 30px;
+    }
+
+    .error-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lightbox img {
+        max-width: 95%;
+    }
+
+}

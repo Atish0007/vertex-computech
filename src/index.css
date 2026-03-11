@@ -1,0 +1,81 @@
+/*=========================
+   CSS RESET / BASE STYLES
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Full website wrapper */
+.site-wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page content area */
+.page-wrapper{
+  flex: 1;
+  height: auto;
+  min-height: auto;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+/* Bar */
+.section-divider {
+  width: 70px;
+  height: 4px;
+  background: #00c6ff;
+  filter: drop-shadow(0 0 10px #00c6ff);
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.HeadingTextGlow {
+  color: #00c6ff;
+  filter: drop-shadow(0 0 10px #00c6ff);
+}
+
+.greentick {
+  color: #00ff39;
+}
+
+.golden {
+  color: #FFD700;
+  filter: drop-shadow(0 0 0px #FFD700) drop-shadow(0 0 15px #FFC107);
+  /* filter:drop-shadow(0 0 5px #FFD700) drop-shadow(0 0 15px #FFC107); */
+  /* drop-shadow(0 0 25px #FFB300); */
+}
+
+
+/* Set OrderCSS for mobileview */
+/* @media (max-width: 576px){
+  .setorder{
+    display:flex;
+    flex-direction:column;
+  }
+  .order1{
+    order: 1; 
+  }
+  .order2{
+    order: 2;
+  }
+} */

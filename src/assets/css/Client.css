@@ -1,0 +1,158 @@
+/* MAIN SECTION */
+.client-section {
+    /* padding: 100px 0; */
+    background: radial-gradient(circle at 50% 90%, #0E2238 0%, #0E2238 25%, #0E2238 45%, #000000 75%);
+    /* background: radial-gradient(circle at 50% 90%, #0e7c80 0%, #094b4f 25%, #02292c 45%, #000000 75%); */
+    /* background: radial-gradient(circle at 50% 100%, #14b8b8 0%, #0f7c7f 20%, #083f42 40%, #021b1d 60%, #000000 80%); */
+    /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+    color: #fff;
+    overflow: hidden;
+}
+
+/* HEADING */
+.client-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.client-heading h5 {
+    color: #00c6ff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px #00c6ff);
+
+}
+
+.client-heading h2 {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+/* MARQUEE */
+.logo-marquee {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    mask-image: linear-gradient(90deg,
+            transparent,
+            black 10%,
+            black 90%,
+            transparent);
+}
+
+/* LOGO TRACK */
+.logo-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+/* SECOND ROW REVERSE */
+.logo-marquee.reverse .logo-track {
+    animation-direction: reverse;
+}
+
+/* PAUSE ON HOVER */
+.logo-marquee:hover .logo-track {
+    animation-play-state: paused;
+}
+
+/* LOGO CARD */
+.logo-card {
+    width: 200px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255 255 255);
+    /* background: rgba(255, 255, 255, 0.1); */
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.4s;
+}
+
+/* HOVER EFFECT */
+.logo-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* LOGO IMAGE */
+.logo-card img {
+    max-width: 120px;
+    max-height: 70px;
+    object-fit: contain;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* TABLET */
+
+@media (max-width:992px) {
+
+    .logo-card {
+        width: 170px;
+        height: 90px;
+    }
+
+    .logo-card img {
+        max-width: 100px;
+    }
+
+}
+
+/* MOBILE */
+@media (max-width:768px) {
+    
+    .client-heading h5{
+        font-size: 15px;
+    }
+
+    .client-heading h2 {
+        font-size: 23px;
+    }
+
+    .logo-track {
+        gap: 20px;
+    }
+
+    .logo-card {
+        width: 130px;
+        height: 70px;
+    }
+
+    .logo-card img {
+        max-width: 80px;
+    }
+
+}
+
+/* SMALL MOBILE */
+
+@media (max-width:480px) {
+
+    .logo-card {
+        width: 110px;
+        height: 60px;
+    }
+
+    .logo-card img {
+        max-width: 40px;
+    }
+
+}

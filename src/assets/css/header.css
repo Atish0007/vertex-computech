@@ -1,0 +1,253 @@
+.header-bg {
+    /* background-color: rgb(250, 250, 252); */
+    background: linear-gradient(180deg, rgb(0 42 88 / 92%), rgb(0 35 115 / 80%));
+    font-size: 12px;
+}
+
+.textSmall {
+    color: #fff;
+    font-size: 11px;
+}
+
+.navbar-bg {
+    position: relative;
+    width: 100%;
+    /* background-color: rgb(245, 245, 247); */
+    background-color: #0d2238;
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform: translateY(0) !important;
+    box-shadow: 0px 0px 50px #ffffff45;
+}
+
+/* Extra navbar css */
+.navbar-brand {
+    color: #fff !important;
+    margin-left: 45px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255 255 255) !important;
+}
+
+.nav-link {
+    color: rgb(255 255 255 / 65%) !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: rgb(255 255 255 / 80%) !important;
+}
+
+
+.navbar-brand img {
+    margin-bottom: 15px;
+    transform: scale(3.3);
+    margin-right: 25px;
+}
+
+/* sticky base (hidden first) */
+.sticky-nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #fff;
+    background: rgb(8 18 32 / 44%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); */
+    transform: translateY(-100%) !important;
+}
+
+/* when active → slide down */
+.sticky-nav:not(.sticky-hide) {
+    transform: translateY(0) !important;
+    animation: fadeInOpacity 0.5s ease-in forwards;
+}
+
+/* hide on scroll up */
+.sticky-nav.sticky-hide {
+    transform: translateY(-100%) !important;
+    animation: fadeOutOpacity 0.5s ease-in forwards;
+}
+
+
+
+/* Animations */
+.fade-left-anim {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.8s ease;
+}
+
+.fade-left-anim.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-right-anim {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-right-anim.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeLeft 2s forwards;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: fadeRight 2s forwards;
+}
+
+@keyframes fadeLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeInOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOpacity {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-label {
+    animation: fadeInUp 0.8s ease-in-out;
+    display: inline-block;
+}
+
+
+
+/* Header Main */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(11, 28, 45, 0.75);
+    /* dark navy transparent */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Links */
+.header .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+/* Hover Glow Effect */
+.header .nav-link:hover {
+    color: #00c6ff !important;
+}
+
+/* Underline Animation */
+.header .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00c6ff;
+    transition: 0.3s ease;
+}
+
+.header .nav-link:hover::after {
+    width: 100%;
+}
+
+
+/* Navbar Toggler CSS for Mobile View */
+/* Remove default border */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none;
+}
+
+/* Remove focus & active outline */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Optional: custom icon color */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  filter: drop-shadow(0px 0px 10px #fff);
+}
+
+/* Smooth tap effect (optional premium touch) */
+.navbar-toggler {
+  padding: 6px 8px !important;
+  border-radius: 6px !important;
+  transition: background-color 0.2s ease !important;
+}
+
+.navbar-toggler:active {
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+
+
+/* Mobile View */
+@media (max-width:768px) {
+    .navbar-brand {
+        margin-left: 55px;
+    }
+}
+
+

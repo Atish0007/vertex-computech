@@ -1,0 +1,186 @@
+/* ===== Base Wrapper ===== */
+.dataRecoveryWrapper {
+    padding: 48px 0;
+    background: #0a0e14;
+    /*linear-gradient(135deg, #0a0e14, #111827);*/
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.containerBox {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ===== Header ===== */
+.mainTitle {
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.subTitle {
+    text-align: center;
+    opacity: 0.9;
+    margin-bottom: 70px;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* ===== Roadmap Section ===== */
+.roadmapSection {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.roadColumn {
+    flex: 1;
+}
+
+.stepItem {
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.stepItem::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: #00c6ff;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #00c6ff;
+}
+
+.stepHeading {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.stepText {
+    opacity: 0.85;
+    line-height: 1.8;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Vertical Divider */
+.roadDivider {
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, #00c6ff, transparent);
+    opacity: 0.4;
+}
+
+/* ===== Image + Content Section ===== */
+.imageOverlaySection {
+    display: flex;
+    align-items: center;
+    background: #0f172a00;
+}
+
+.imageSide {
+    flex: 1;
+}
+
+.imageSide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentSide {
+    flex: 1;
+    padding: 0px 30px;
+}
+
+.advTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.advItem {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.8;
+    opacity: 0.9;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.advItem::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: #00c6ff;
+    /* border-radius: 50%; */
+    box-shadow: 0 0 12px #00c6ff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+
+    .roadmapSection {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .roadDivider {
+        display: none;
+    }
+
+    .imageOverlaySection {
+        flex-direction: column;
+    }
+
+    /* .contentSide {
+        padding: 40px 20px;
+    } */
+
+    .mainTitle {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 567px) {
+    .mainTitle {
+        font-size: 23px !important;
+        padding-top: 20px;
+    }
+
+    .subTitle {
+        margin-bottom: 20px;
+    }
+
+    .stepItem {
+        margin-bottom: 20px;
+    }
+
+    .roadmapSection {
+        margin-bottom: 0;
+    }
+
+    .advTitle {
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contentSide {
+        padding: 30px 20px 0px 20px;
+    }
+
+}
