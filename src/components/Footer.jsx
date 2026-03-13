@@ -23,7 +23,6 @@ function Footer() {
 
                     {/* About */}
                     <div className="col-lg-4 col-md-6">
-                        {/* <h3 className="footer-logo">Vertex Computech</h3> */}
                         <img
                             src={footerLogo}
                             alt="Vertex Computech"
@@ -52,26 +51,27 @@ function Footer() {
                     <div className="col-lg-2 col-md-6 col-6">
                         <h5>Quick Links</h5>
                         <ul>
-                            {/* <i className="bi bi-link-45deg"></i> */}
-                            {/* <li className="nav-item">
+                            <li className="nav-item">
                                 <Link to="/" className={isActive("/")}>Home</Link>
-                            </li> */}
+                            </li>
                             <li className="nav-item">
                                 <Link to="/Aboutus" className={isActive("/Aboutus")}>About us</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link to="/desktopsupport" className={isActive("/desktopsupport")}>Desktop Support</Link>
+                                <Link to="/services" className={isActive("/services")}>Services</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link to="/services" className={isActive("/services")}>Services</Link>
+                                <Link to="/desktopsupport" className={isActive("/desktopsupport")}>Support</Link>
                             </li>
-                            <li className="nav-item">
+
+                            {/* <li className="nav-item">
                                 <Link to="/blogs" className={isActive("/blogs")}>Blogs</Link>
-                            </li>
+                            </li> */}
+
                             <li className="nav-item">
-                                <Link to="/contact" className={isActive("/contact")}>Contact</Link>
+                                <Link to="/contact" className={isActive("/contact")}>Contact us</Link>
                             </li>
                         </ul>
                     </div>

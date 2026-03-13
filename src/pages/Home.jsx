@@ -1,7 +1,6 @@
 
 import "../assets/css/home.css"
 import bgVideo from "../assets/images/bg.mp4";
-import heroImg from "../assets/images/vertexhome.jpeg";
 
 function Home() {
 

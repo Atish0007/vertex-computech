@@ -94,7 +94,7 @@ function Header() {
       <nav className={`navbar navbar-expand-lg navbar-bg ${isSticky ? "sticky-nav" : ""} ${hideSticky ? "sticky-hide" : ""}`} style={{ marginBottom: "-1px" }}>
 
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <Link className="navbar-brand" to="/" onClick={closeNavbar}>
             <img
               src={vertexlogo}
               alt="Vertex Computech"
@@ -127,50 +127,19 @@ function Header() {
               </li>
 
               <li className="nav-item">
-                <Link to="/desktopsupport" className={isActive("/desktopsupport")} onClick={closeNavbar}>Desktop Support</Link>
-              </li>
-
-              <li className="nav-item">
                 <Link to="/services" className={isActive("/services")} onClick={closeNavbar}>Services</Link>
               </li>
-              <li className="nav-item">
-                <Link to="/blogs" className={isActive("/blogs")} onClick={closeNavbar}>Blogs</Link>
-              </li>
-              {/* SERVICES DROPDOWN */}
-              {/* <li className="nav-item dropdown">
-                    <span
-                      className="nav-link dropdown-toggle"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                    >
-                      Services
-                    </span>
 
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link className="dropdown-item" to="/cloud-services">
-                          Cloud Services
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" to="/cyber-security">
-                          Cyber Security
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" to="/remote-management">
-                          Remote Infrastructure Management
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
+              <li className="nav-item">
+                <Link to="/desktopsupport" className={isActive("/desktopsupport")} onClick={closeNavbar}>Support</Link>
+              </li>
 
               {/* <li className="nav-item">
-                    <Link to="/career" className={isActive("/career")}>Career</Link>
-                  </li> */}
+                <Link to="/blogs" className={isActive("/blogs")} onClick={closeNavbar}>Blogs</Link>
+              </li> */}
 
               <li className="nav-item">
-                <Link to="/contact" className={isActive("/contact")} onClick={closeNavbar}>Contact</Link>
+                <Link to="/contact" className={isActive("/contact")} onClick={closeNavbar}>Contact us</Link>
               </li>
 
             </ul>

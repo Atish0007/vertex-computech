@@ -44,7 +44,7 @@ function Aboutus() {
                             <div className="col-4">
                                 <div className="statCard">
                                     <i className="bi bi-laptop"></i>
-                                    <h3>1500+</h3>
+                                    <h3>7500+</h3>
                                     <p>Devices Repaired</p>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ function Aboutus() {
                             <div className="col-4">
                                 <div className="statCard">
                                     <i className="bi bi-people"></i>
-                                    <h3>1000+</h3>
+                                    <h3>7200+</h3>
                                     <p>Happy Clients</p>
                                 </div>
                             </div>
@@ -60,7 +60,7 @@ function Aboutus() {
                             <div className="col-4">
                                 <div className="statCard">
                                     <i className="bi bi-tools"></i>
-                                    <h3>5+</h3>
+                                    <h3>9+</h3>
                                     <p>Years Experience</p>
                                 </div>
                             </div>

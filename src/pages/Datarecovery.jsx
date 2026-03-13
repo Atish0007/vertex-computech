@@ -32,7 +32,7 @@ function Datarecovery() {
                             <div className="stepItem">
                                 <div className="stepHeading">Initial Device Assessment</div>
                                 <div className="stepText">
-                                    Safely submit your storage media—HDDs, SSDs, or Flash drives—at our Kothrud-based lab.
+                                    Safely submit your storage media—HDDs, SSDs, or Flash drives—at our Kothrud-based shop.
                                     We begin with a secure intake process to document the hardware status.
                                 </div>
                             </div>
@@ -78,7 +78,7 @@ function Datarecovery() {
                                 <div className="stepHeading">Encrypted Data Restitution</div>
                                 <div className="stepText">
                                     Your data is returned via an encrypted transfer or your preferred storage medium,
-                                    ensuring it remains confidential from our lab to your hands.
+                                    ensuring it remains confidential from our shop to your hands.
                                 </div>
                             </div>
 
@@ -118,7 +118,7 @@ function Datarecovery() {
                         </div>
 
                         <div className="advItem">
-                            Modern Lab Facility: Equipped with the latest tools to handle "impossible" recovery scenarios.
+                            Modern shop Facility: Equipped with the latest tools to handle "impossible" recovery scenarios.
                         </div>
 
                     </div>

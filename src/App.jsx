@@ -9,6 +9,7 @@ import ReviewsSection from "./pages/ReviewsSection";
 import ClientSection from "./pages/ClientSection";
 import DesktopSupport from "./pages/DesktopSupport";
 import Services from "./pages/Services";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 
@@ -26,6 +27,7 @@ function App() {
                 <Route path="Aboutus" element={<AboutUs />} />
                 <Route path="desktopsupport" element={<DesktopSupport />} />
                 <Route path="services" element={<Services />} />
+                <Route path="contact" element={<Contact />} />
             </Routes>
             {location.pathname === "/" && <LaptopDesktop />}
             {location.pathname === "/" && <Hardware />}

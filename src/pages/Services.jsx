@@ -42,7 +42,12 @@ import teamviewer from "../assets/images/services/softwareImg/teamviewer.svg";
 import vlc from "../assets/images/services/softwareImg/vlc.svg";
 import winrar from "../assets/images/services/softwareImg/winrar.svg";
 import adobe from "../assets/images/services/softwareImg/adobe.svg";
-
+import harddisk from "../assets/images/services/softwareImg/Hard_Disk_Sentinel.jpeg";
+import crystaldisk from "../assets/images/services/softwareImg/crystaldisk.png";
+import keyboardtest from "../assets/images/services/softwareImg/keyboard-test-utility.png";
+import WebcamViewer from "../assets/images/services/softwareImg/WebcamViewer.png";
+import BatteryInfoView from "../assets/images/services/softwareImg/BatteryInfoView.png";
+import ccleaner from "../assets/images/services/softwareImg/ccleaner.png";
 
 
 
@@ -75,7 +80,47 @@ const Services = () => {
         {
             name: "Google Chrome",
             img: chrome,
-            link: "https://www.google.com/chrome/"
+            link: "https://www.dropbox.com/scl/fi/82fte83r50wly1qg01w4j/NZXT-CAM-Setup.exe?rlkey=veyp79jsx20c8tzubd8j4ke2q&st=psmfuaov&dl=1"
+        },
+        {
+            name: "Hard Disk Sentinel",
+            img: harddisk,
+            link: "https://www.dropbox.com/scl/fi/pl0a0g526bkico8c0pzzc/hdsentinel_pro_setup.zip?rlkey=a9ew2gm3yf382haqsbawtcfn9&st=8fumr10v&dl=1",
+        },
+        {
+            name:"Crystal Disk Info",
+            img: crystaldisk,
+            link:"https://www.dropbox.com/scl/fi/4ffif56bcuh7xyqw7gm26/CrystalDiskInfo9_8_0.zip?rlkey=js15hzxr7ph2yjhovrwfyo653&st=bj8p94k7&dl=1"
+        },
+        {
+            name:"Keyboard Test Utility 2.1.0",
+            img: keyboardtest,
+            link: "https://www.dropbox.com/scl/fi/dhzc2d3n93k07hf9jy7wg/keyboardtestutility.exe?rlkey=11ffws51hgdi3n6e5cf8m1jbi&st=ludo70ni&dl=1"
+        },
+        {
+            name:"WebcamViewer",
+            img: WebcamViewer,
+            link: "https://www.dropbox.com/scl/fi/jxsfmg6v9ifv5xob566d6/Webcam-Viewer.exe?rlkey=rc5g6vhcle1kbk5c4jxz8t8zy&st=a00tszk5&dl=1"
+        },
+        {
+            name:"Battery Info View",
+            img: BatteryInfoView,
+            link: "https://www.dropbox.com/scl/fi/znr1neb14jyd0mhyvyyf1/batteryinfoview.nupkg?rlkey=gx4qmq7wivbvnm45fvpbegyvq&st=zicrs836&dl=1"
+        },
+        {
+            name:"CCleaner",
+            img: ccleaner,
+            link: "https://www.dropbox.com/scl/fi/0kbzij4ww5lp0332gctdd/ccsetup_online_setup.exe?rlkey=tgkkr8uutsgrl3yath94e74mr&st=wgmwcweb&dl=1"
+        },
+        {
+            name: "VLC Player",
+            img: vlc,
+            link: "https://www.dropbox.com/scl/fi/v7nlzu5e1i3kfp5pi5u2i/vlc-3.0.23-win32.exe?rlkey=5a1jisk77lbxo90xud37hjuhm&st=t9xystuz&dl=1"
+        },
+        {
+            name: "WinRAR",
+            img: winrar,
+            link: "https://www.dropbox.com/scl/fi/2vk37bymtvcaiz34v4977/winrar-x64-720.exe?rlkey=fg8ckl5xf6qi6cwuigeidaj9n&st=hm6405l4&dl=1"
         },
         {
             name: "AnyDesk",
@@ -86,16 +131,6 @@ const Services = () => {
             name: "TeamViewer",
             img: teamviewer,
             link: "https://www.teamviewer.com/en/download/"
-        },
-        {
-            name: "VLC Player",
-            img: vlc,
-            link: "https://www.dropbox.com/scl/fi/docmvxyylqbnc76x5bmdw/vlc-3.0.23-win32.exe?rlkey=q6088y7o59pifyr1iy74ha01x&st=qhrbrm2q&dl=0"
-        },
-        {
-            name: "WinRAR",
-            img: winrar,
-            link: "https://www.win-rar.com/download.html"
         },
         {
             name: "Adobe Reader",
@@ -117,11 +152,13 @@ const Services = () => {
                             <span className="display-5"><FaLaptop className="text-white" /></span>
                             <div>
                                 <h1 className="fs-1 fw-bold mb-0 text-white">
-                                    <span className="HeadingTextGlow">Vertex</span> Computech
+                                    Professional Laptop Repair Service in Pune
+                                    {/* <span className="HeadingTextGlow">Vertex</span> Computech */}
                                 </h1>
                                 {/* text-white-50 */}
                                 <p className="lead text-white mb-0">
-                                    Professional Laptop Repair Service in Pune
+                                    {/* Professional Laptop Repair Service in Pune */}
+                                    <span className="HeadingTextGlow">Vertex</span> Computech
                                 </p>
                             </div>
                         </div>
@@ -141,19 +178,19 @@ const Services = () => {
                         </p>
 
                         {/* Brands */}
-                        <h3 className="h4 fw-bold text-white mt-5 mb-4 section-title laptop-title">
+                        <h3 className="h4 fw-bold text-white mt-5 mb-4 section-services-title laptop-title">
                             Expert Laptop Repair for All Major Brands
                         </h3>
                         <div className="row g-3 mb-5">
                             {[
+                                "Apple",
                                 "Lenovo",
                                 "Dell",
                                 "HP",
                                 "Acer",
                                 "Asus",
-                                "Toshiba",
                                 "Samsung",
-                                "Sony Vaio",
+                                "Toshiba",
                             ].map((brand) => (
                                 <div key={brand} className="col-6 col-sm-4 col-md-3">
                                     <div className="brand-chip">{brand}</div>
@@ -288,12 +325,12 @@ const Services = () => {
                             <span className="display-4"><IoDesktopOutline className="text-white" /></span>
                             <div>
                                 <h1 className="fs-1 fw-bold mb-0 text-white">
-                                    <span className="HeadingTextGlow">Vertex</span> Computech
-                                    {/* Professional Computer Repair Service in Pune */}
+                                    Professional Desktop Repair Service in Pune
+                                    {/* <span className="HeadingTextGlow">Vertex</span> Computech */}
                                 </h1>
                                 <p className="lead text-white mb-0">
-                                    Professional Desktop Repair Service in Pune
-                                    {/* Fast Doorstep Service | Trusted by 1170+ Customers */}
+                                    <span className="HeadingTextGlow">Vertex</span> Computech
+                                    {/* Professional Desktop Repair Service in Pune */}
                                 </p>
                             </div>
                         </div>
@@ -460,8 +497,6 @@ const Services = () => {
                     </div>
                 </div>
 
-
-
                 {/* Spare Parts Slider Section */}
                 <section className="sparePartsSection">
                     <div className="container">
@@ -500,6 +535,7 @@ const Services = () => {
                     </div>
                 </section>
 
+                {/* Softwares Section */}
                 <section className="softwareSection">
 
                     <div className="container">
@@ -520,11 +556,12 @@ const Services = () => {
                                     key={index}
                                 >
 
-                                    <img src={item.img} alt={item.name} style={index === 1 || index === 2 ? { transform: "scale(1.5)" } : {}} />
+                                    <img src={item.img} alt={item.name}  style={index === 9 || index === 10 ? { transform: "scale(1.5)" } : {}} />
+                                    {/* style={index === 1 || index === 2 ? { transform: "scale(1.5)" } : {}} */}
 
                                     <h4>{item.name}</h4>
 
-                                    <button className="downloadBtn">
+                                    <button className="premium-btn laptop-btn">
                                         Download
                                     </button>
 
