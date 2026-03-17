@@ -14,20 +14,17 @@ function LaptopDesktop() {
                     <div className="row align-items-center">
                             <div className="col-lg-6 order-lg-2 order-2">
                                 <h2 className="ld-title mb-3 mt-4 mt-md-0 text-center text-md-start">
-                                    Premium MacBook Repair & Logic Board Services
+                                    Expert MacBook Repair Services – Fast, Reliable & Affordable
                                 </h2>
 
                                 <p className="ld-text text-center text-md-start">
-                                    At Vertex Computech, we offer specialized MacBook repair services in Pune,
-                                    handling everything from MacBook Air screen replacements to complex
-                                    MacBook Pro logic board repairs.
+                                    At Vertex Computech, we provide professional MacBook repair services with fast, reliable, and affordable solutions. 
+                                    Our experienced technicians specialize in MacBook screen replacement, battery replacement, keyboard repair, motherboard repair, and macOS troubleshooting. 
                                 </p>
 
                                 <p className="ld-text text-center text-md-start">
-                                    Our experts provide high-performance Mac-specific SSD upgrades
-                                    and battery replacements with precision and care. Trust our skilled
-                                    engineers for reliable, Apple-standard solutions with a quick
-                                    turnaround to get your workstation back in action.
+                                    Whether your MacBook is running slow, not turning on, or has hardware damage, we diagnose the problem quickly and provide the best repair solution using high-quality parts. 
+                                    With our commitment to quality service and customer satisfaction, Vertex Computech ensures your MacBook works like new again.
                                 </p>
                             </div>
 

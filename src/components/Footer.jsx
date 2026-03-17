@@ -5,6 +5,34 @@ import footerLogo from "../assets/images/vertex-white.png";
 
 function Footer() {
 
+const handleSubmit = (e) => {
+
+
+  const whatsappMessage = `Welcome to Vertex Computech – Pune!
+
+Specialists in Professional Laptop & MacBook Repair:
+
+ FREE Checking & Diagnosis
+ Chip-Level Repair
+ Motherboard Repair
+ Screen Replacement
+ Keyboard & Battery Replacement
+ SSD & RAM Upgrade
+ Data Recovery
+
+Fast Service | Genuine Parts | Transparent Pricing
+
+Please share your laptop issue or model number — our expert team will assist you shortly.
+
+Thank you for trusting Vertex Computech!!`;
+
+  const encodedMessage = encodeURIComponent(whatsappMessage);
+
+  const url = `https://wa.me/918446772581?text=${encodedMessage}`;
+
+  window.open(url, "_blank");
+};
+
     const location = useLocation();
 
     const pageLabel =
@@ -80,7 +108,7 @@ function Footer() {
                     <div className="col-lg-4 col-md-6">
                         <h5>Contact Us</h5>
 
-                        <p>
+                        <p className="text-white fw-normal">
                             <i className="fa-solid fa-location-dot"></i> Pune, Maharashtra
                         </p>
 
@@ -95,10 +123,10 @@ function Footer() {
                         </p>
 
                         <div className="footer-social">
-                            <i className="fa-brands fa-facebook-f"></i>
-                            <i className="fa-brands fa-instagram"></i>
-                            <i className="fa-brands fa-whatsapp"></i>
-                            <i className="fa-brands fa-linkedin-in"></i>
+                            <a href="https://www.facebook.com/share/1JDkRPWMY4/" className="text-white"><i className="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/vertexcomputech?utm_source=qr&igsh=YW52NHpoa2lsMmds" className="text-white"><i className="fa-brands fa-instagram"></i></a>
+                            <a role="button" onClick={handleSubmit} className="text-white"><i className="fa-brands fa-whatsapp"></i></a>
+                            {/* <i className="fa-brands fa-linkedin-in"></i> */}
                         </div>
                     </div>
 

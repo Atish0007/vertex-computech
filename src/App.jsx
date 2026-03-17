@@ -1,3 +1,4 @@
+import {useEffect} from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -13,8 +14,35 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 
 
+
 function App() {
+
   
+  //Prevent Inspect  
+useEffect(() => {
+   const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+  const handleKeyDown = (e) => {
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && e.key === "I") ||
+      (e.ctrlKey && e.shiftKey && e.key === "J") ||
+      (e.ctrlKey && e.key === "U")
+    ) {
+      e.preventDefault();
+    }
+  };
+  document.addEventListener("contextmenu", handleContextMenu);
+  document.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    document.removeEventListener("keydown", handleKeyDown);
+    document.removeEventListener("contextmenu", handleContextMenu);
+  };
+}, []);
+
+
   const location = useLocation();
 
   return (

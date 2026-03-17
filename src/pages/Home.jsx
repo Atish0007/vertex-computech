@@ -1,8 +1,37 @@
 
 import "../assets/css/home.css"
 import bgVideo from "../assets/images/bg.mp4";
+import bgImage from "../assets/images/bgImage.png";
 
 function Home() {
+
+    const handleSubmit = (e) => {
+
+
+        const whatsappMessage = `Welcome to Vertex Computech – Pune!
+
+Specialists in Professional Laptop & MacBook Repair:
+
+ FREE Checking & Diagnosis
+ Chip-Level Repair
+ Motherboard Repair
+ Screen Replacement
+ Keyboard & Battery Replacement
+ SSD & RAM Upgrade
+ Data Recovery
+
+Fast Service | Genuine Parts | Transparent Pricing
+
+Please share your laptop issue or model number — our expert team will assist you shortly.
+Thank you for trusting Vertex Computech!!`;
+
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+
+        const url = `https://wa.me/918446772581?text=${encodedMessage}`;
+
+        window.open(url, "_blank");
+    };
+
 
     return (
         <>
@@ -74,7 +103,7 @@ function Home() {
             <section className="container-fluid p-0">
                 <div className="video-container">
 
-                    <video autoPlay loop muted playsInline id="background-video">
+                    <video autoPlay loop muted playsInline poster={bgImage} id="background-video" preload="metadata">
                         <source src={bgVideo} type="video/mp4" />
                     </video>
 
@@ -83,24 +112,24 @@ function Home() {
                     <div className="video-content">
                         <h1 className="text-white text-center">
                             <span className="vrtnm">Vertex Computech</span>
-                            
-                        </h1>
-                            <p className="fs-5 fs-md-4 text-white text-center">Laptop Repair Kothrud, Home Service Laptop Repair Pune, Best Laptop Shop Kothrud.</p>
-                            {/* ✅ Glass Buttons */}
-                            <div className="glass-btn-group">
-                                <a href="tel:8446772581" className="glass-btn">
-                                <i className="bi bi-telephone fs-6"></i> Call Now
-                                </a>
 
-                                <a
-                                href="https://wa.me/918446772581"
-                                target="_blank"
+                        </h1>
+                        <p className="fs-5 fs-md-4 text-white text-center">Laptop Repair Kothrud, Home Service Laptop Repair Pune, Best Laptop Shop Kothrud.</p>
+                        {/* Glass Buttons */}
+                        <div className="glass-btn-group">
+                            <a href="tel:8446772581" className="glass-btn">
+                                <i className="bi bi-telephone fs-6"></i> Call Now
+                            </a>
+
+                            <a
+                                onClick={handleSubmit}
                                 rel="noopener noreferrer"
                                 className="glass-btn"
-                                >
+                                role="button"
+                            >
                                 <i className="bi bi-whatsapp fs-6"></i> WhatsApp
-                                </a>
-                            </div>
+                            </a>
+                        </div>
                     </div>
 
                 </div>
