@@ -3,7 +3,17 @@ import "../assets/css/home.css"
 import bgVideo from "../assets/images/bg.mp4";
 import bgImage from "../assets/images/bgImage.png";
 
+import SEO from "../components/SEO";
+
 function Home() {
+
+    // Home page SEO
+    <SEO
+        title="Best Laptop Repair in Kothrud Pune | Vertex Computech"
+        description="Expert laptop repair in Pune. Fast service, chip-level repair, doorstep support."
+        keywords="laptop repair pune, computer repair pune, motherboard repair"
+        url="https://vertexcomputech.com/"
+    />
 
     const handleSubmit = (e) => {
 
